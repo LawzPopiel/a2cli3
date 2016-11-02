@@ -1,0 +1,55 @@
+{
+  "project": {
+    "version": "1.0.0-beta.16",
+    "name": "a2cli3"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": "assets",
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "mobile": false,
+      "styles": [
+        "styles.scss",
+        "assets/font-awesome/css/font-awesome.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/@progress/kendo-angular-buttons/dist/npm/css/main.css",
+        "../node_modules/@progress/kendo-angular-grid/dist/npm/css/main.css",
+        "../node_modules/@progress/kendo-angular-layout/dist/npm/css/main.css",
+        "../node_modules/@telerik/kendo-theme-bootstrap/dist/all.css"        
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/tether/dist/js/tether.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js" 
+               
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "prefixInterfaces": false
+  }
+}

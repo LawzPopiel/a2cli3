@@ -1,0 +1,24 @@
+<div class="container-fluid">
+      <div class="row cppe-table">
+        <div class="col-sm-8"> 
+            <kendo-grid 
+                [data]="gridView"
+                [skip]="skip"
+                [pageSize]="pageSize"
+                [scrollable]="'virtual'"
+                [rowHeight]="36"
+                [height]="600"
+                [sortable]="{ mode: 'multiple' }"
+                [sort]="sort"
+                 (sortChange)="sortChange($event)"
+                >
+                <kendo-grid-column field="genSub" title="Gen Sub" width="80"></kendo-grid-column>
+                <kendo-grid-column field="genSubName" title="Name" width="120"></kendo-grid-column>
+                <kendo-grid-column field="phase" title="Phase" width="80"></kendo-grid-column>
+                <kendo-grid-column field="drillOutMethod" title="DO Method" width="80"></kendo-grid-column>  
+                <kendo-grid-column field="unitCost" title="Unit Cost" width="80"></kendo-grid-column> 
+                <kendo-grid-column field="quantity" title="Quantity" width="80"></kendo-grid-column>                                                
+            </kendo-grid>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+$cppe-grey: #5e666e;
+$cppe-grey-l: #cacccc;
+$cppe-grey-l1: #dfe6e2;
+$cppe-grey-d: #53666e;
+$cppe-grey-d1: #45515b;
+$cppe-grey-d2: #344248;
+$cppe-text-xs: 10px;
+$cppe-text-sm: 12px;
+$cppe-text-md: 14px;
+$cppe-text-lg: 16px;
+
+@mixin tray-header($bcolor,$color,$height) {
+    background-color:$bcolor !important;
+    height:$height;
+    color:$color;
+}
+@mixin tray-block($color) {
+    color:$color;
+}
+.bg-primary {
+  color: #fff !important;
+  background-color:$cppe-grey !important;
+}
+
+.panel-header {
+    background-color:$cppe-grey;
+    color:white;
+}
+
+.tray-text {
+    font-size:$cppe-text-md !important;
+}
+
+.color-tray-1 {
+    @include tray-header($cppe-grey, white, 50px);
+}
+.tray-1 {
+    @include tray-block($cppe-grey-d2);
+}
+.container {
+    margin: 0px 20px;
+}

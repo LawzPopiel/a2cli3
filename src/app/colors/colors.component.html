@@ -1,0 +1,40 @@
+
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col-xs-3" style="min-width:330px">
+    <kendo-chart [title]="chartTitle2">
+      <kendo-chart-legend  [visible]="legendVisible"  position="bottom" >
+      </kendo-chart-legend>
+      <kendo-chart-series>
+        <kendo-chart-series-item  name="Scenario 1"
+                                  type="line" [data]="[2, 5, 7,6,9,4]">
+        </kendo-chart-series-item>
+        <kendo-chart-series-item  name="Scenario 2"
+                                  type="line" [data]="[3, 6, 5,6,9,7]">
+        </kendo-chart-series-item>
+      </kendo-chart-series>
+    </kendo-chart>
+
+      </div>
+
+    <div class="col-xs-3" style="min-width:330px">
+        <kendo-chart [title]="chartTitle1" [transitions]="showTransitions">
+          <kendo-chart-legend position="bottom" orientation="horizontal"></kendo-chart-legend>
+          <kendo-chart-axis-defaults [majorGridLines]="{ visible : false}"></kendo-chart-axis-defaults>
+          <kendo-chart-series>
+            <kendo-chart-series-item name="PAT" [data]="[1, 2, 3, 5]">
+            </kendo-chart-series-item>
+            <kendo-chart-series-item  name="STAT" [data]="[5, 3, 2, 1]">
+            </kendo-chart-series-item>
+          </kendo-chart-series>
+        </kendo-chart>       
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+

@@ -1,0 +1,88 @@
+$cppe-grey: #5e666e;
+$cppe-grey-l: #cacccc;
+$cppe-grey-l1: #dfe6e2;
+$cppe-grey-d: #53666e;
+$cppe-grey-d1: #45515b;
+$cppe-grey-d2: #344248;
+
+.cppe-side-nav {
+  color: #fff !important;
+  background-color:$cppe-grey-l1 !important;
+}
+.main-content-wrapper {
+    margin-left:180px;
+    margin-right:10px;
+
+}
+
+/* Hide for mobile, show later 
+.sidebar {
+display: none; 
+}   */
+
+  .sidebar {
+    position: fixed;
+    height:100%;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y:hidden;
+/*     overflow-y: auto; Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+  height:100%;
+  width:200px
+
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: $cppe-grey-d2;
+}
+.nav-sidebar > li:hover {
+  color: #fff !important;
+  background-color:$cppe-grey-l ;
+}
+.nav-sidebar > li > a:hover {
+  color: #fff !important;
+  text-decoration:none;
+
+}
+.nav-sidebar > .active > li:hover {
+  color: #fff !important;
+  background-color:$cppe-grey ;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color:$cppe-grey ;
+}
+.nav-sidebar > .active {
+  color: #fff;
+  background-color:$cppe-grey ;    
+}
+
+
+.main {
+  padding: 20px;
+}
+
+.active-class {
+    color:white !important;
+    font-weight:bold;
+    background-color:$cppe-grey-d1;
+}
